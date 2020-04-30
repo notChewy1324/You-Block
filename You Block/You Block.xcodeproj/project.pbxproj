@@ -13,7 +13,36 @@
 		F72977BC245B70750032636D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F72977BB245B70750032636D /* Assets.xcassets */; };
 		F72977BF245B70750032636D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F72977BD245B70750032636D /* LaunchScreen.storyboard */; };
 		F7442577245B744100333293 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7442576245B744100333293 /* NetworkExtension.framework */; };
+		F744257F245B751600333293 /* FilterControlProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F744257E245B751600333293 /* FilterControlProvider.swift */; };
+		F7442584245B751600333293 /* YouBlock.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F744257C245B751600333293 /* YouBlock.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F7442589245B753300333293 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7442576245B744100333293 /* NetworkExtension.framework */; };
+		F744258C245B753300333293 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F744258A245B753300333293 /* CFNetwork.framework */; };
+		F744258D245B753300333293 /* Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F744258B245B753300333293 /* Network.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F7442582245B751600333293 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F72977A7245B70620032636D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F744257B245B751600333293;
+			remoteInfo = YouBlock;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F7442588245B751600333293 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F7442584245B751600333293 /* YouBlock.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F72977AF245B70620032636D /* You Block.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "You Block.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -25,6 +54,12 @@
 		F72977C0245B70750032636D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7442574245B744000333293 /* You Block.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "You Block.entitlements"; sourceTree = "<group>"; };
 		F7442576245B744100333293 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		F744257C245B751600333293 /* YouBlock.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = YouBlock.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F744257E245B751600333293 /* FilterControlProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterControlProvider.swift; sourceTree = "<group>"; };
+		F7442580245B751600333293 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7442581245B751600333293 /* YouBlock.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = YouBlock.entitlements; sourceTree = "<group>"; };
+		F744258A245B753300333293 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		F744258B245B753300333293 /* Network.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Network.framework; path = System/Library/Frameworks/Network.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +71,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F7442579245B751600333293 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F744258C245B753300333293 /* CFNetwork.framework in Frameworks */,
+				F7442589245B753300333293 /* NetworkExtension.framework in Frameworks */,
+				F744258D245B753300333293 /* Network.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -43,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				F72977B1245B70620032636D /* You Block */,
+				F744257D245B751600333293 /* YouBlock */,
 				F72977B0245B70620032636D /* Products */,
 				F7442575245B744100333293 /* Frameworks */,
 			);
@@ -52,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				F72977AF245B70620032636D /* You Block.app */,
+				F744257C245B751600333293 /* YouBlock.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,9 +120,21 @@
 		F7442575245B744100333293 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F744258A245B753300333293 /* CFNetwork.framework */,
+				F744258B245B753300333293 /* Network.framework */,
 				F7442576245B744100333293 /* NetworkExtension.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F744257D245B751600333293 /* YouBlock */ = {
+			isa = PBXGroup;
+			children = (
+				F744257E245B751600333293 /* FilterControlProvider.swift */,
+				F7442580245B751600333293 /* Info.plist */,
+				F7442581245B751600333293 /* YouBlock.entitlements */,
+			);
+			path = YouBlock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -88,15 +147,34 @@
 				F72977AB245B70620032636D /* Sources */,
 				F72977AC245B70620032636D /* Frameworks */,
 				F72977AD245B70620032636D /* Resources */,
+				F7442588245B751600333293 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F7442583245B751600333293 /* PBXTargetDependency */,
 			);
 			name = "You Block";
 			productName = "You Block";
 			productReference = F72977AF245B70620032636D /* You Block.app */;
 			productType = "com.apple.product-type.application";
+		};
+		F744257B245B751600333293 /* YouBlock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7442585245B751600333293 /* Build configuration list for PBXNativeTarget "YouBlock" */;
+			buildPhases = (
+				F7442578245B751600333293 /* Sources */,
+				F7442579245B751600333293 /* Frameworks */,
+				F744257A245B751600333293 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YouBlock;
+			productName = YouBlock;
+			productReference = F744257C245B751600333293 /* YouBlock.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -109,6 +187,9 @@
 				ORGANIZATIONNAME = "Cameron Garrison";
 				TargetAttributes = {
 					F72977AE245B70620032636D = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					F744257B245B751600333293 = {
 						CreatedOnToolsVersion = 11.4.1;
 					};
 				};
@@ -127,6 +208,7 @@
 			projectRoot = "";
 			targets = (
 				F72977AE245B70620032636D /* You Block */,
+				F744257B245B751600333293 /* YouBlock */,
 			);
 		};
 /* End PBXProject section */
@@ -142,6 +224,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F744257A245B751600333293 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -154,7 +243,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F7442578245B751600333293 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F744257F245B751600333293 /* FilterControlProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F7442583245B751600333293 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F744257B245B751600333293 /* YouBlock */;
+			targetProxy = F7442582245B751600333293 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F72977B8245B70630032636D /* Main.storyboard */ = {
@@ -293,11 +398,13 @@
 		F72977C4245B70750032636D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "You Block/You Block.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 98JPYSAE27;
 				INFOPLIST_FILE = "You Block/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,17 +419,61 @@
 		F72977C5245B70750032636D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "You Block/You Block.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 98JPYSAE27;
 				INFOPLIST_FILE = "You Block/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.NotChewy1324.You-Block";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F7442586245B751600333293 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = YouBlock/YouBlock.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 98JPYSAE27;
+				INFOPLIST_FILE = YouBlock/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.NotChewy1324.You-Block.YouBlock";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F7442587245B751600333293 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = YouBlock/YouBlock.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 98JPYSAE27;
+				INFOPLIST_FILE = YouBlock/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.NotChewy1324.You-Block.YouBlock";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -345,6 +496,15 @@
 			buildConfigurations = (
 				F72977C4245B70750032636D /* Debug */,
 				F72977C5245B70750032636D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7442585245B751600333293 /* Build configuration list for PBXNativeTarget "YouBlock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7442586245B751600333293 /* Debug */,
+				F7442587245B751600333293 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
