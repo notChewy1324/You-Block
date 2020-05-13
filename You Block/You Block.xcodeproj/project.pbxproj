@@ -18,6 +18,8 @@
 		F7442589245B753300333293 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7442576245B744100333293 /* NetworkExtension.framework */; };
 		F744258C245B753300333293 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F744258A245B753300333293 /* CFNetwork.framework */; };
 		F744258D245B753300333293 /* Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F744258B245B753300333293 /* Network.framework */; };
+		F746D9C3246BA18200872278 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F744258A245B753300333293 /* CFNetwork.framework */; };
+		F746D9C4246BA18200872278 /* Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F744258B245B753300333293 /* Network.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,7 +69,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F746D9C3246BA18200872278 /* CFNetwork.framework in Frameworks */,
 				F7442577245B744100333293 /* NetworkExtension.framework in Frameworks */,
+				F746D9C4246BA18200872278 /* Network.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,7 +408,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 98JPYSAE27;
 				INFOPLIST_FILE = "You Block/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -425,7 +429,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 98JPYSAE27;
 				INFOPLIST_FILE = "You Block/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
